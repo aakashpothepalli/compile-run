@@ -39,7 +39,7 @@ export async function runCppFileAndReturnPromise(filePath: string, options?: Opt
         return err;
     }
 }
-export async function compileFileAndReturnPromise(filePath: string, options?: Options): Promise<Result> {
+export async function compileFileAndReturnPromise(filePath: string, options?: Options): Promise<String> {
     try {
         let executablePath = await compileCpp(filePath, options);
         return executablePath;
