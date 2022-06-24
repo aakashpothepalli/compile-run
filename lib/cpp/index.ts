@@ -1,11 +1,11 @@
 import { runCppFile } from './run-file';
 import { runCppSource } from './run-source';
-import { execute } from "../execute-command";
+import { runExecutable } from "../executable/execute-executable";
 
 const cpp = {
     runFile: runCppFile,
     runSource: runCppSource,
-    execute:execute
+    runExecutable:runExecutable
 };
 
 export default cpp;
