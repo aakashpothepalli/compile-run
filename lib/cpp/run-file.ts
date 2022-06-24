@@ -28,9 +28,7 @@ export function runCppFile(filePath: string, options?: Options): Promise<Result>
 export async function runCppFile(filePath: string, ...args: any[]): Promise<Result> {
     return multipleArgsCallbackifier<Result>(filePath, runCppFileAndReturnPromise, ...args);
 }
-export async function compileCppFile(filePath: string, ...args: any[]): Promise<Result> {
-    return multipleArgsCallbackifier<Result>(filePath, compileFileAndReturnPromise, ...args);
-}
+
 
 export async function runCppFileAndReturnPromise(filePath: string, options?: Options): Promise<Result> {
     try {
